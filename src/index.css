@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+  overflow: hidden;
+  background-image: url(./pages/assets/banner-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(146, 146, 146, 0.5);
+}
+
+
+
+@keyframes transitionPageLeft {
+  0%{
+    margin-left: 100%;
+  }
+  50%{
+    margin-left: -100%;
+  }
+  100%{
+    margin-left: 0%;
+  }
+}
+
+@keyframes transitionPageTop{
+  0%{
+    margin-bottom: 100%;
+  }
+  100%{
+    margin-bottom: 0%;
+  }
+}
+
+@keyframes FadeInOpacity{
+  0%{
+    opacity: 0;
+    padding-top: 0px;
+  }
+  100%{
+    opacity: 1;
+    padding-top: 30px;
+  }
 }

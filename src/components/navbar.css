@@ -1,0 +1,45 @@
+
+.navbar{
+    width: 40%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.navbar-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-content a{
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding-top: 30px;
+    transition: 250ms;
+}
+
+.navbar-content > :nth-child(1){
+    animation: FadeInOpacity 500ms;
+}
+
+.navbar-content > :nth-child(2){
+    animation: FadeInOpacity 500ms;
+}
+
+.navbar-content > :nth-child(3){
+    animation: FadeInOpacity 1500ms;
+}
+
+.navbar-content > :nth-child(4){
+    animation: FadeInOpacity 2000ms;
+}
+
+.navbar a:hover{
+    color: white;
+    padding-top: 35px;
+}
