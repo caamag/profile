@@ -8,6 +8,7 @@
     left: 0px;
     right: 0px;
     margin: auto;
+    z-index: 3;
 }
 
 .navbar-content{
@@ -23,6 +24,7 @@
     padding-top: 30px;
     transition: 250ms;
 }
+
 
 .navbar-content > :nth-child(1){
     animation: FadeInOpacity 500ms;
@@ -44,6 +46,13 @@
     color: white;
     padding-top: 35px;
 }
+
+.active{
+    border-bottom: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /*querys*/
 

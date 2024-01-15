@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function Projetos () {
 
+    //projects information
     useEffect(() => {
 
         async function getProjectsData (){
@@ -23,9 +24,15 @@ function Projetos () {
     const [projects1, setProjects1] = useState([]);
     const [projects2, setProjects2] = useState([]);
 
+    //show other projects
+    const [nxtSlide, setNxtSlide] = useState(true);
+    const slideStyle = nxtSlide ? 
+    'slide':
+    'slide slide1'; 
+
     return <div className="projetos container">
 
-        <section className='slide'>
+        <section className={slideStyle}>
 
             {projects1.map((project) => (
                 <a href={project.link}>
@@ -36,6 +43,16 @@ function Projetos () {
                     </div>
                 </a>
             ))}
+
+            <button className='prev-btn'
+            onClick={() => {setNxtSlide(false)}}>
+                <img src="./assets/next-btn.png" alt="" />
+            </button>
+
+            <button className='next-btn'
+            onClick={() => {setNxtSlide(true)}}>
+                <img src="./assets/prev-btn.png" alt="" />
+            </button>
 
         </section>
 

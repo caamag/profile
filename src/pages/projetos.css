@@ -3,33 +3,37 @@
     width: 200%;
     overflow: hidden;
     display: flex;
+    align-items: center;
+    z-index: 2;
 }
 
 .slide{
     width: 50%;
     height: 100%;
     display: flex;
-    animation: transitionPageLeft 2500ms;
-}
-
-.slide > :nth-child(1){
-    animation: itemOpacity 1500ms;
-}
-
-.slide > :nth-child(2){
-    animation: itemOpacity 1600ms;
-}
-
-.slide > :nth-child(3){
-    animation: itemOpacity 1700ms;
-}
-
-.slide > :nth-child(4){
-    animation: itemOpacity 1800ms;
+    transition: 700ms;
+    animation: transitionPageLeft 1500ms;
+    position: relative;
 }
 
 .slide1{
     margin-left: -50%;
+}
+
+.slide > :nth-child(1){
+    animation-delay: 1250ms;
+}
+
+.slide > :nth-child(2){
+    animation-delay: 1350ms;
+}
+
+.slide > :nth-child(3){
+    animation-delay: 1450ms;
+}
+
+.slide > :nth-child(4){
+    animation-delay: 1550ms;
 }
 
 .slide a{
@@ -37,6 +41,7 @@
     height: 100%;
     text-decoration: none;
     color: white;
+    animation: itemOpacity 500ms;
 }
 
 .item{
@@ -47,29 +52,86 @@
     justify-content: center;
     flex-direction: column;
     transition: 250ms;
-    background-color: rgba(11, 49, 76, 0.4); 
+    background-color: rgba(36, 36, 36, 0.5); 
 }
 
 .item:hover{
-    background-color: rgba(11, 49, 76, 0.6);
+    background-color: rgba(36, 36, 36, 0.8);
 }
 
 .item img{
-    width: 200px;
-    height: auto;
+    height: 150px;
+    width: auto;
 }
 
 .item h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 100;
+}
+
+.next-btn, .prev-btn{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 250ms;
+    background: none;
+    border: none;
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    z-index: 3;
+}
+
+.next-btn{
+    right: 51%;
+}
+
+.prev-btn{
+    left: 51%;
+}
+
+.next-btn:hover, .prev-btn:hover{
+    scale: 1.05;
+}
+
+.next-btn img, .prev-btn img{
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
 }
 
 /*animations*/
 @keyframes itemOpacity {
     0%{
-        opacity: 0;
+        opacity: 0.5;
     }
     100%{
         opacity: 1;
+    }
+}
+
+/*querys*/
+@media screen and (max-width: 700px) {
+    .slide{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slide a{
+        width: 100%;
+        height: 20%;
+    }
+    .item{
+        flex-direction: unset;
+    }
+    .item img{
+        width: 80px;
+        height: auto;
+    }
+    .item h1{
+        font-size: 2.5rem;
+    }
+    .next-btn, .prev-btn{
+        width: 40px;
+        height: 40px;
     }
 }
