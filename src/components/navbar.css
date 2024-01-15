@@ -1,6 +1,7 @@
 
 .navbar{
     width: 40%;
+    max-width: 1350px;
     height: 80px;
     position: absolute;
     top: 0px;
@@ -42,4 +43,12 @@
 .navbar a:hover{
     color: white;
     padding-top: 35px;
+}
+
+/*querys*/
+
+@media screen and (max-width: 700px){
+    .navbar{
+        width: 100%;
+    }
 }

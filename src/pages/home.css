@@ -16,10 +16,122 @@
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 3rem;
-    line-height: 80px;
+    line-height: 80px
+}
+
+.home-text h1{
+    animation: titleAnimationH1 800ms;
+
 }
 
 .home-text span{
     font-size: 20rem;
     color: rgb(255, 255, 255, 0.1);
+    animation: titleAnimationSpan 800ms;
 }
+
+.icons-container{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icons-container img{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.icons-container a{
+    transition: 250ms;
+}
+
+.icons-container a:hover{
+    padding-left: 10px;
+}
+
+.icons-container > :nth-child(1){
+    animation: iconsAnimation 400ms;
+}
+
+.icons-container > :nth-child(2){
+    animation: iconsAnimation 600ms;
+}
+
+.icons-container > :nth-child(3){
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    color: white;
+    animation: iconsAnimation 800ms;
+}
+
+/*querys*/
+@media screen and (max-width: 1100px) {
+    .home{
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .home{
+        background-size: 250%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home{
+        background-image: url(./assets/banner-mobile.jpg);
+        background-size: 140%;
+    }
+    .home-text{
+        font-size: 2.5rem;
+    }
+    .home-text span{
+        font-size: 18rem;
+    }
+    .icons-container{
+        top: 50%;
+    }
+
+}
+
+
+
+/*animations*/
+@keyframes iconsAnimation {
+    0%{
+      padding-left: 0px;
+      opacity: 0;
+    }
+    100%{
+      padding-left: 10px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes titleAnimationH1 {
+    0%{
+      margin-right: 200px;
+    }
+    100%{
+      margin-right: 0px;
+    }
+  }
+  
+  @keyframes titleAnimationSpan{
+    0%{
+      margin-left: 400px;
+    }
+    100%{
+      margin-right: 0px;
+    }
+  }

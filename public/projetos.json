@@ -1,0 +1,54 @@
+{
+    "slide1": [
+        {
+            "id": 1, 
+            "name": "Florence Tattoo", 
+            "img": "./assets/logo-florence.png", 
+            "link": ""
+        }, 
+        {
+            "id": 2, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }, 
+        {
+            "id": 3, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }, 
+        {
+            "id": 4, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }
+    ], 
+    "slide2": [
+        {
+            "id": 5, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }, 
+        {
+            "id": 6, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }, 
+        {
+            "id": 7, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }, 
+        {
+            "id": 8, 
+            "name": "Florence Tatto", 
+            "img": "./assets/florence-logo.png", 
+            "link": ""
+        }
+    ]
+}
