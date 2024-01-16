@@ -1,0 +1,93 @@
+
+.details{
+    background-color: rgb(40, 40, 40, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.details div{
+    width: 30%;
+    height: 60%;
+    margin: 10px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 300px;
+    height: auto;
+    margin-right: 0px;
+    animation: fadeInIMG 500ms;
+}
+
+.project-content{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.project-content h2{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    animation: fadeInIMG 500ms;
+}
+
+.project-content p{
+    font-size: 1.4rem;
+    margin-left: 50px;
+    margin-top: 30px;
+    animation: fadeInText 800ms;
+}
+
+.project-content ul{
+    margin-top: 30px;
+}
+
+
+.project-content li{
+    font-size: 2rem;
+    margin-left: 50px;
+    transition: 250ms;
+    animation: fadeInText 800ms; 
+}
+
+.project-content li:hover{
+    margin-left: 55px;
+}
+
+.project-content a{
+    color: white;
+}
+
+
+
+
+
+/*animations*/
+@keyframes fadeInText{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: 50px;
+    }
+}
+
+
+@keyframes fadeInIMG {
+    0%{
+        margin-right: 200px;
+    }
+    100%{
+        margin-right: 0px;
+    }
+}

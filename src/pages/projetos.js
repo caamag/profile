@@ -3,6 +3,8 @@ import './projetos.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 function Projetos () {
 
     //projects information
@@ -15,6 +17,7 @@ function Projetos () {
             const slide2 = data.slide2;
             setProjects1(slide1); 
             setProjects2(slide2); 
+            
         }
 
         getProjectsData();
@@ -35,7 +38,7 @@ function Projetos () {
         <section className={slideStyle}>
 
             {projects1.map((project) => (
-                <a href={project.link}>
+                <a href={`/projetos/${project.id}`} className='link-container'>
                     <div className='item' key={project.id}>
                         <img alt='project image'
                         src={project.img}/>
@@ -59,7 +62,7 @@ function Projetos () {
         <section className='slide'>
 
             {projects2.map((project) => (
-                <a href={project.link}>
+                <a href={`/projetos/${project.id}`} className='link-container'>
                     <div className='item' key={project.id}>
                         <img alt='project image'
                         src={project.img}/>

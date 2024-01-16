@@ -14,13 +14,13 @@
         }, 
         {
             "id": 3, 
-            "name": "Florence Tatto", 
+            "name": "ReactGram", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }, 
         {
             "id": 4, 
-            "name": "Florence Tatto", 
+            "name": "E-commerce", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }
@@ -28,25 +28,25 @@
     "slide2": [
         {
             "id": 5, 
-            "name": "Florence Tatto", 
+            "name": "WPP Web Desktop", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }, 
         {
             "id": 6, 
-            "name": "Florence Tatto", 
+            "name": "Mini Blog", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }, 
         {
             "id": 7, 
-            "name": "Florence Tatto", 
+            "name": "Aquarius", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }, 
         {
             "id": 8, 
-            "name": "Florence Tatto", 
+            "name": "Portifólio pessoal", 
             "img": "./assets/florence-logo.png", 
             "link": ""
         }
