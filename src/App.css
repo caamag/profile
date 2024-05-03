@@ -2,13 +2,11 @@
     position: absolute;
     width: 80%;
     max-width: 1450px;
-    height: 90vh;
+    height: 80vh;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin: auto;
-    overflow: hidden;
-    background-color: rgb(10, 10, 10);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
 }

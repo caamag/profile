@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //components
 import Nav from './components/nav/nav';
+import Contact from './components/contacts/contact';
 
 //pages
 import Home from './pages/home/home';
@@ -11,11 +12,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path={'/'} element={<Home />}/>
-          <Route path={'/projects'} />
-        </Routes>
+          <Contact />
+
+          <div className='container'>
+            <Nav />
+
+            <Routes>
+              <Route path={'/'} element={<Home />}/>
+              <Route path={'/projects'} />
+            </Routes>
+          </div>
       </BrowserRouter>
     </div>
   );

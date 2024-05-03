@@ -1,10 +1,10 @@
 
-function Home () {
+import './home.css';
 
-    return <div className="container home-container">
+function Home() {
 
+    return <div className="content home-content">
         
-
     </div>
 
 };
