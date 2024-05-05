@@ -7,23 +7,27 @@ import linkedinIcon from './assets/linkedin.png';
 import smathphoneIcon from './assets/smartphone.png';
 import emailIcon from './assets/o-email.png';
 
-function Contact () {
+function Contact() {
     return <div className='contact-content'>
-        
-        <img src={profileImage} alt="" className='profile-image'/>
+
+        <img src={profileImage} alt="" className='profile-image' />
 
         <h1>Caio Magalhães</h1><br />
         <h3>Desenvolvedor Fronted</h3>
         <div className='contacts-icons'>
-            <a href="https://github.com/caamag"><img src={githubIcon} alt="" /></a>
-            <a href=""><img src={linkedinIcon} alt="" /></a>
+            <a href="https://github.com/caamag" target='blank'>
+                <img src={githubIcon} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/caio-lopes-programador/" target='blank'>
+                <img src={linkedinIcon} alt="" />
+            </a>
         </div>
 
         <div className='contacts-box'>
             <a href="https://wa.me/5511966197683" target='blank'>
                 <div className='wpp-content'>
                     <img src={smathphoneIcon} alt="" />
-                    <p>TEL: <br /> 1196619-7683</p>
+                    <p>TEL: <br /> (11) 96619-7683</p>
                 </div>
             </a>
 
@@ -33,12 +37,12 @@ function Contact () {
                     <p>Email: <br />caiolopesfv@gmail.com</p>
                 </div>
             </a>
-        </div>
+        </div><br /><br />
 
-        <a href="">CV</a>
+        <a href="#" className='cv-btn'>DOWNLOAD CV</a>
 
     </div>
 
-}; 
+};
 
 export default Contact;

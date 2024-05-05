@@ -1,8 +1,6 @@
 {
-  "short_name": "React App",
+  "short_name": "Caio Magalhães profile",
   "name": "Create React App Sample",
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display": "standalone"
 }
