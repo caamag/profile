@@ -35,12 +35,12 @@ function Nav() {
             </div>
         </NavLink>
 
-        <NavLink to={'/cv'}>
+        <a href="" target='blank'>
             <div className='nav-card'>
                 <img src={CVIcon} alt="" /><br />
                 <p>CURRÍCULO</p>
             </div>
-        </NavLink>
+        </a>
     </nav>
 }
 

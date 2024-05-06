@@ -7,6 +7,8 @@ import Contact from './components/contacts/contact';
 
 //pages
 import Home from './pages/home/home';
+import Projects from './pages/projects/projects';
+import FormContact from './pages/form/form';
 
 function App() {
   return (
@@ -19,10 +21,10 @@ function App() {
 
           <Routes>
             <Route path={'/'} element={<Home />} />
-            <Route path={'/projects'} />
-            <Route path={'/contact'} />
-            <Route path={'/cv'} />
+            <Route path={'/projects'} element={<Projects />} />
+            <Route path={'/contact'} element={<FormContact />} />
           </Routes>
+
         </div>
       </BrowserRouter>
     </div>

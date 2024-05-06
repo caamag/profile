@@ -12,7 +12,7 @@ function Contact() {
 
         <img src={profileImage} alt="" className='profile-image' />
 
-        <h1>Caio Magalhães</h1><br />
+        <h2>Caio Magalhães</h2>
         <h3>Desenvolvedor Fronted</h3>
         <div className='contacts-icons'>
             <a href="https://github.com/caamag" target='blank'>

@@ -22,12 +22,9 @@
 
 .contact-content h3 {
     color: rgb(30, 30, 30);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 10px rgb(202, 202, 202);
     width: 55%;
     margin: 0 auto;
     padding: 3px;
-    border-radius: 5px;
 }
 
 .contacts-icons {
