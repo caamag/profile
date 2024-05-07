@@ -20,6 +20,15 @@
     text-align: left;
 }
 
+.task-flow-card {
+    background-color: rgb(41, 41, 41);
+}
+
+.task-flow-card p,
+.task-flow-card .project-link {
+    color: white !important;
+}
+
 .projects-content .card img {
     position: absolute;
     top: 20%;

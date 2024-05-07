@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 //images
 import pandoraLogo from './assets/Pandora-Logo.png';
+import taskFlowLogo from './assets/taskFlow-logo.png';
+import shareLogo from './assets/share-logo.png';
 
 function Projects() {
 
@@ -25,13 +27,21 @@ function Projects() {
             </NavLink>
 
             <NavLink to={'/'}>
-                <div className="card"></div>
+                <div className="card">
+                    <img src={shareLogo} alt="" /><br /><br />
+                    <p>Mini Blog</p>
+                    <a href="" className='project-link'>urlIndisponível</a>
+                </div>
             </NavLink>
 
             <NavLink to={'/'}>
-                <div className="card"></div>
+                <div className="card task-flow-card">
+                    <img src={taskFlowLogo} alt="" /><br /><br />
+                    <p>Dashboard dinâmico</p>
+                    <a href="" className='project-link'>urlIndisponível</a>
+                </div>
             </NavLink>
-        </div>
+        </div><br /><br />
     </div>
 };
 
