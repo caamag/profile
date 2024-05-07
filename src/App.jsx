@@ -8,6 +8,7 @@ import Contact from './components/contacts/contact';
 //pages
 import Home from './pages/home/home';
 import Projects from './pages/projects/projects';
+import CurrentProject from './pages/currentProject/currentProject';
 import FormContact from './pages/form/form';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path={'/'} element={<Home />} />
             <Route path={'/projects'} element={<Projects />} />
+            <Route path={'/projects/:id'} element={<CurrentProject />} />
             <Route path={'/contact'} element={<FormContact />} />
           </Routes>
 

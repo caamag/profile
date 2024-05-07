@@ -18,7 +18,7 @@ function Projects() {
         </div>
 
         <div className='cards'>
-            <NavLink to={'/'}>
+            <NavLink to={'/projects/1'}>
                 <div className="card">
                     <img src={pandoraLogo} alt="" /><br /><br />
                     <p>FAQ INTELIGENTE</p>
@@ -26,7 +26,7 @@ function Projects() {
                 </div>
             </NavLink>
 
-            <NavLink to={'/'}>
+            <NavLink to={'/projects/2'}>
                 <div className="card">
                     <img src={shareLogo} alt="" /><br /><br />
                     <p>Mini Blog</p>
@@ -34,7 +34,7 @@ function Projects() {
                 </div>
             </NavLink>
 
-            <NavLink to={'/'}>
+            <NavLink to={'/projects/3'}>
                 <div className="card task-flow-card">
                     <img src={taskFlowLogo} alt="" /><br /><br />
                     <p>Dashboard dinâmico</p>

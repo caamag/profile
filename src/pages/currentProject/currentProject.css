@@ -1,0 +1,103 @@
+.current-project-content {
+    text-align: center;
+}
+
+.current-project-content .title h1 {
+    font-size: 2.5rem;
+}
+
+.current-project-content .line-title {
+    width: 100px;
+}
+
+.back-page {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    transition: 150ms;
+}
+
+.arrow-link {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    background: none !important;
+}
+
+.back-page:hover {
+    filter: invert(20%);
+}
+
+.primary-image {
+    width: 25%;
+    height: auto;
+    margin-top: 50px;
+    animation: fadeInPrimaryImage 500ms;
+}
+
+.project-resume {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.project-resume p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-indent: 15px;
+    margin-bottom: 15px;
+    animation-delay: 500ms;
+    animation: fadeInProjectResume 500ms;
+}
+
+.current-project-content a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(30, 30, 30);
+    transition: 150ms;
+}
+
+.current-project-content a:hover {
+    padding: 10px 35px 10px 35px;
+}
+
+.repository-link {
+    position: absolute;
+    right: 0px;
+    background: none !important;
+}
+
+.repository-link img {
+    width: 40px;
+    height: auto;
+    transition: 150ms;
+}
+
+.repository-link img:hover {
+    filter: invert(20%);
+}
+
+/*animations*/
+@keyframes fadeInPrimaryImage {
+    0% {
+        margin-right: 150px;
+    }
+
+    100% {
+        margin-right: 0px;
+    }
+}
+
+@keyframes fadeInProjectResume {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
