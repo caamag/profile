@@ -55,3 +55,19 @@
 .nav .active img {
     filter: invert(100%);
 }
+
+@media screen and (max-width: 1350px) {
+    .nav a{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .nav-card img{
+        width: 20px;
+    }
+
+    .nav-card p{
+        font-size: 0.9rem;
+    }
+}
