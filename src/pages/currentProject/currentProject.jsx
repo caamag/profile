@@ -17,7 +17,7 @@ function CurrentProject() {
     const projects = [
         {
             logo: pandoraLogo,
-            title: 'FAQ INTELIGENTE',
+            title: './FAQ INTELIGENTE',
             content: <div className='project-resume'>
                 <p>A Central de Ajuda aos Clientes Pandora Brasil é um projeto desenvolvido
                     durante meu período de estágio na empresa BCR.CX em colaboração com a equipe de consultoria Zendesk.
@@ -39,7 +39,7 @@ function CurrentProject() {
         },
         {
             logo: shareLogo,
-            title: 'Mini Blog',
+            title: './Mini Blog',
             content: <div className='project-resume'>
                 <p>O projeto do blog em desenvolvimento é uma iniciativa onde integrei tecnologias
                     modernas para oferecer uma boa experiência aos usuários. Utilizando a biblioteca
@@ -64,15 +64,15 @@ function CurrentProject() {
                     quanto em seu layout e identidade visual. Portanto, em determinados momentos podem ocorrer eventuais erros
                     não esperados.</p>
             </div>,
-            htmlUrl: '',
+            htmlUrl: 'https://mini-blog-khaki.vercel.app',
             repository: true,
             repositoryLink: 'https://github.com/caamag/share'
         },
         {
             logo: taskFlowLogo,
-            title: 'Dashboard dinâmico',
+            title: './Dashboard dinâmico',
             content: <div className='project-resume'>
-                <p>Projeto em desenvolvimento</p>
+                <p>Projeto em desenvolvimento...</p>
             </div>,
             htmlUrl: '#',
             repository: true,
@@ -80,7 +80,10 @@ function CurrentProject() {
         }
     ]
 
-    return <div className="content current-project-content">
+    const contentClass = projects[index].title === './Dashboard dinâmico' ? 'content current-project-content-dark'
+        : 'content current-project-content'
+
+    return <div className={contentClass}>
 
         <NavLink to={'/projects'} className='arrow-link'>
             <img src={arrow} alt="" className='back-page' />

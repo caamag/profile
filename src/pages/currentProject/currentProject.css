@@ -1,5 +1,6 @@
 .current-project-content {
     text-align: center;
+    transition: 250ms;
 }
 
 .current-project-content .title h1 {
@@ -22,10 +23,6 @@
     top: -10px;
     left: 0px;
     background: none !important;
-}
-
-.back-page:hover {
-    filter: invert(20%);
 }
 
 .primary-image {
@@ -61,7 +58,8 @@
     transition: 150ms;
 }
 
-.current-project-content a:hover {
+.current-project-content a:hover,
+.current-project-content-dark a:hover {
     padding: 10px 35px 10px 35px;
 }
 
@@ -79,6 +77,46 @@
 
 .repository-link img:hover {
     filter: invert(20%);
+}
+
+.current-project-content-dark {
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    border-top: 30px solid rgb(41, 41, 41);
+    color: white;
+    transition: 250ms;
+}
+
+.current-project-content-dark .title h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.current-project-content-dark .line-title {
+    background-color: white;
+    width: 100px;
+}
+
+.current-project-content-dark .repository-link {
+    top: 10px;
+    right: 10px;
+}
+
+.current-project-content-dark .arrow-link img {
+    filter: invert(100%);
+}
+
+.current-project-content-dark .repository-link img {
+    filter: invert(100%);
+}
+
+.current-project-content-dark a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    transition: 150ms;
 }
 
 /*animations*/

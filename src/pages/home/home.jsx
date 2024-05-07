@@ -11,7 +11,7 @@ function Home() {
     return <div className="content home-content">
 
         <div className='title'>
-            <h1>Sobre mim</h1>
+            <h1>./Sobre mim</h1>
             <div className='line-title'></div>
         </div>
 
@@ -26,8 +26,8 @@ function Home() {
             temporibus repellat possimus eos aperiam.
         </p>
 
-        <h2>O que eu faço!</h2>
-        <h3 className='subtitle'>Tecnologias que fazem parte do meu escopo de trabalho - </h3>
+        <h2>- O que eu faço!</h2>
+        <h3 className='subtitle'>Tecnologias que fazem parte do meu dia a dia:</h3>
 
         <div className='cards'>
             <div className="card">

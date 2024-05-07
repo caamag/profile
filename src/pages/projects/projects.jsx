@@ -13,7 +13,7 @@ function Projects() {
     return <div className="content projects-content">
 
         <div className='title'>
-            <h1>Projetos</h1>
+            <h1>./Projetos</h1>
             <div className='line-title'></div>
         </div>
 
