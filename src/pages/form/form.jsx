@@ -2,6 +2,7 @@ import './form.css';
 
 import { useState } from 'react';
 import emailJS from '@emailjs/browser';
+import { findAllByDisplayValue } from '@testing-library/react';
 
 function FormContact() {
 
@@ -10,8 +11,13 @@ function FormContact() {
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
 
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+
     function handleSubmit(e) {
 
+        setLoading(true);
         e.preventDefault();
 
         const templateParams = {
@@ -21,6 +27,13 @@ function FormContact() {
             content,
         }
 
+        if (!name || !tel || !email || !content) {
+            setLoading(false)
+            setError(true)
+            setErrorMessage('Preencha todos os campos')
+            return
+        }
+
         emailJS.send("service_xqbxkmb", "template_fspdihh", templateParams, "cFvwDQhk8yP0OoPqX")
             .then(response => {
                 console.log("Email enviado", response.status, response.text);
@@ -28,6 +41,12 @@ function FormContact() {
                 setTell('');
                 setEmail('');
                 setContent('');
+                setError(false);
+                setLoading(false);
+            })
+            .catch(error => {
+                setError(true)
+                setErrorMessage(`${error.message} - Erro ao enviar o email, tente novamente mais tarde`)
             })
     }
 
@@ -35,6 +54,13 @@ function FormContact() {
 
         <form onSubmit={handleSubmit}>
 
+            <div className='title'>
+                <h1>./Fale comigo</h1>
+                <div className='line-title'></div>
+            </div>
+
+            {loading && <p className='loading'>Carregando...</p>}
+            {error && <p className='error-message'>{errorMessage}</p>}
             <input
                 type="text"
                 value={name}

@@ -51,6 +51,30 @@ h3 {
     font-size: 1.4rem;
 }
 
+.loading {
+    width: 200px;
+    margin-left: 40px;
+    padding: 8px;
+    padding-left: 12px;
+    background-color: rgb(60, 234, 144);
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.error-message {
+    width: 200px;
+    margin-left: 40px;
+    padding: 8px;
+    padding-left: 12px;
+    background-color: rgb(234, 83, 60);
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
 /*animations text*/
 @keyframes fadeInTitle {
     0% {
@@ -69,5 +93,12 @@ h3 {
 
     100% {
         margin-left: 40px;
+    }
+}
+
+/*querys*/
+@media screen and (max-width: 650px) {
+    .container {
+        height: 60%;
     }
 }

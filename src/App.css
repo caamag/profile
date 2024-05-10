@@ -1,4 +1,4 @@
-.App{
+.App {
     position: absolute;
     width: 80%;
     max-width: 1450px;
@@ -9,4 +9,14 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+/*querys*/
+@media screen and (max-width: 650px) {
+    .App {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 97vh;
+    }
 }

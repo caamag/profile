@@ -104,8 +104,26 @@
     box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
+/*querys*/
+@media screen and (max-width: 650px) {
+    .contact-content {
+        width: 95%;
+        height: 40%;
+    }
+
+    .profile-image {
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .contacts-box {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 1350px) {
-    .cv-btn{
+    .cv-btn {
         padding-left: 20px;
         padding-right: 20px;
     }

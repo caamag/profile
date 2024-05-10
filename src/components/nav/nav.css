@@ -56,18 +56,26 @@
     filter: invert(100%);
 }
 
+
+/*querys*/
+@media screen and (max-width: 650px) {
+    .nav {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1350px) {
-    .nav a{
+    .nav a {
         width: 60px;
         height: 60px;
         border-radius: 10px;
     }
 
-    .nav-card img{
+    .nav-card img {
         width: 20px;
     }
 
-    .nav-card p{
+    .nav-card p {
         font-size: 0.9rem;
     }
 }

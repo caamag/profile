@@ -41,6 +41,7 @@
 }
 
 .project-resume p {
+    text-align: justify;
     font-size: 1.8rem;
     font-weight: 400;
     text-indent: 15px;

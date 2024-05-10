@@ -1,23 +1,57 @@
 .form-contact-content {
-    width: 80%;
-    text-align: center;
+    width: 100%;
     padding-top: 20px;
 }
 
 .form-contact-content input {
-    margin: 5px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     width: 50%;
-    padding: 8px;
+    padding: 15px;
     border: none;
     background: none;
-    box-shadow: 2px 2px 10px rgb(202, 202, 202);
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 10px rgb(153, 153, 153);
+    border-radius: 8px;
+    animation: fadeInText 600ms;
 }
 
 .form-contact-content textarea {
-    margin: 5px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     width: 50%;
-    padding: 8px;
+    padding: 15px;
     border: none;
     background: none;
-    box-shadow: 2px 2px 10px rgb(202, 202, 202);
+    border-radius: 8px;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 10px rgb(153, 153, 153);
+    animation: fadeInText 600ms;
+}
+
+.form-contact-content input:focus,
+.form-contact-content textarea {
+    outline: none;
+}
+
+.form-contact-content button {
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 2px 2px 10px rgb(153, 153, 153);
+    width: 40%;
+    min-width: 300px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    animation: fadeInText 600ms;
+    transition: 250ms;
+}
+
+.form-contact-content button:hover {
+    width: 42%;
+}
+
+.form-contact-content .title {
+    margin-bottom: 50px;
 }
