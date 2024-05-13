@@ -94,14 +94,25 @@
     color: rgb(93, 93, 93);
 }
 
-.cv-btn {
-    padding: 15px 100px 15px 100px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.4rem;
-    border-radius: 8px;
-    background-color: rgb(48, 48, 48);
-    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+.cv-btn{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(20%);
+    transition: 150ms;
+    font-weight: bold;
+}
+
+.cv-btn:hover{
+    filter: invert(0%);
 }
 
 /*querys*/
@@ -118,13 +129,5 @@
 
     .contacts-box {
         display: none;
-    }
-}
-
-
-@media screen and (max-width: 1350px) {
-    .cv-btn {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }

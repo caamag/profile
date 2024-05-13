@@ -100,5 +100,13 @@ h3 {
 @media screen and (max-width: 650px) {
     .container {
         height: 60%;
+        width: 95%;
+
+    }
+
+    .content{
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
 }

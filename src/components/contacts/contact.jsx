@@ -21,6 +21,10 @@ function Contact() {
             <a href="https://www.linkedin.com/in/caio-lopes-programador/" target='blank'>
                 <img src={linkedinIcon} alt="" />
             </a>
+
+            <a href="" className='cv-btn'>
+                CV
+            </a>
         </div>
 
         <div className='contacts-box'>
@@ -38,8 +42,6 @@ function Contact() {
                 </div>
             </a>
         </div><br /><br />
-
-        <a href="#" className='cv-btn'>DOWNLOAD CV</a>
 
     </div>
 
