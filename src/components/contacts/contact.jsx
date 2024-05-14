@@ -8,6 +8,8 @@ import smathphoneIcon from './assets/smartphone.png';
 import emailIcon from './assets/o-email.png';
 import cvFile from '../../PDF/Curriculo-Caio-Lopes.pdf';
 
+import { NavLink } from 'react-router-dom';
+
 function Contact() {
     return <div className='contact-content'>
 
@@ -24,6 +26,14 @@ function Contact() {
             </a>
 
             <a href={cvFile} className='cv-btn' target='_blank'>CV</a>
+        </div>
+
+        <div className='nav-mobile'>
+            <NavLink to={'/'}>Início</NavLink>
+
+            <NavLink to={'/projects'}>Projetos</NavLink>
+
+            <NavLink to={'/contact'}>Contato</NavLink>
         </div>
 
         <div className='contacts-box'>

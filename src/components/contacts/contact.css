@@ -94,7 +94,7 @@
     color: rgb(93, 93, 93);
 }
 
-.cv-btn{
+.cv-btn {
     background-color: black;
     width: 30px;
     height: 30px;
@@ -111,8 +111,35 @@
     font-weight: bold;
 }
 
-.cv-btn:hover{
+.cv-btn:hover {
     filter: invert(0%);
+}
+
+.nav-mobile {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    display: none;
+    justify-content: space-between;
+}
+
+.nav-mobile a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: 150ms;
+}
+
+.nav-mobile .active {
+    background-color: rgb(48, 48, 48);
+    color: white;
 }
 
 /*querys*/
@@ -120,6 +147,7 @@
     .contact-content {
         width: 95%;
         height: 40%;
+        margin-top: 80%;
     }
 
     .profile-image {
@@ -129,5 +157,9 @@
 
     .contacts-box {
         display: none;
+    }
+
+    .nav-mobile {
+        display: block;
     }
 }
