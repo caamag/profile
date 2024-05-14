@@ -6,6 +6,7 @@ import githubIcon from './assets/github.png';
 import linkedinIcon from './assets/linkedin.png';
 import smathphoneIcon from './assets/smartphone.png';
 import emailIcon from './assets/o-email.png';
+import cvFile from '../../PDF/Curriculo-Caio-Lopes.pdf';
 
 function Contact() {
     return <div className='contact-content'>
@@ -22,9 +23,7 @@ function Contact() {
                 <img src={linkedinIcon} alt="" />
             </a>
 
-            <a href="" className='cv-btn'>
-                CV
-            </a>
+            <a href={cvFile} className='cv-btn' target='_blank'>CV</a>
         </div>
 
         <div className='contacts-box'>

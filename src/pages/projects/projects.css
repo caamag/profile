@@ -50,3 +50,18 @@
     color: #6b17E6 !important;
     font-size: 1.4rem;
 }
+
+@media screen and (max-width: 650px) {
+    .projects-content .cards {
+        width: 100%;
+    }
+
+    .projects-content .cards a {
+        width: 70%;
+    }
+
+    .title {
+        width: 90%;
+        justify-content: center;
+    }
+}

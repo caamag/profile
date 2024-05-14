@@ -98,13 +98,17 @@ h3 {
 
 /*querys*/
 @media screen and (max-width: 650px) {
+    h1 {
+        font-size: 3rem;
+    }
+
     .container {
         height: 60%;
         width: 95%;
 
     }
 
-    .content{
+    .content {
         height: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
