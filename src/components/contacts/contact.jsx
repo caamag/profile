@@ -29,11 +29,11 @@ function Contact() {
         </div>
 
         <div className='nav-mobile'>
-            <NavLink to={'/'}>Início</NavLink>
+            <div><NavLink to={'/'}>Início</NavLink></div>
 
-            <NavLink to={'/projects'}>Projetos</NavLink>
+            <div><NavLink to={'/projects'}>Projetos</NavLink></div>
 
-            <NavLink to={'/contact'}>Contato</NavLink>
+            <div><NavLink to={'/contact'}>Contato</NavLink></div>
         </div>
 
         <div className='contacts-box'>
