@@ -32,6 +32,12 @@
     animation: fadeInPrimaryImage 500ms;
 }
 
+@media screen and (max-width: 500px) {
+    .primary-image {
+        width: 200px;
+    }
+}
+
 .project-resume {
     width: 80%;
     margin: 0 auto;

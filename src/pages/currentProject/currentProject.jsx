@@ -5,9 +5,11 @@ import { useParams, NavLink } from 'react-router-dom';
 //images
 import pandoraLogo from '../projects/assets/Pandora-Logo.png';
 import taskFlowLogo from '../projects/assets/taskFlow-logo.png';
-import shareLogo from '../projects/assets/share-logo.png';
 import arrow from './assets/arrow-left.png';
 import githubIcon from '../../components/contacts/assets/github.png';
+import lacosteLogo from '../projects/assets/Lacoste-logo-.png.png'
+import coinIcon from '../projects/assets/coin-icon.jpeg'
+import zendeskIcon from '../projects/assets/zendesk-logo.webp'
 
 
 function CurrentProject() {
@@ -23,10 +25,6 @@ function CurrentProject() {
                     durante meu período de estágio na empresa BCR.CX em colaboração com a equipe de consultoria Zendesk.
                     Este projeto visa facilitar o autoatendimento dos clientes, oferecendo uma plataforma intuitiva para
                     esclarecer dúvidas, realizar solicitações e registrar reclamações.</p>
-                <p>Minha responsabilidade principal foi o desenvolvimento da página em si, utilizando uma combinação
-                    de tecnologias como HBS (Handlebars), uma linguagem de templates amplamente utilizada pela Zendesk,
-                    CSS e JavaScript. Ao longo do processo, concentrei-me na criação da homepage, na estruturação das
-                    páginas de artigos e seções, bem como na estilização de formulários para a abertura de chamados.</p>
                 <p>Além disso, desenvolvi páginas específicas para a captura de pesquisas de satisfação diretamente
                     dentro da plataforma Zendesk. Isso foi alcançado através da geração dinâmica de formulários com
                     base nos dados trazidos da API da conta do cliente. Essa abordagem permitiu que, ao final de cada
@@ -38,49 +36,70 @@ function CurrentProject() {
             repositoryLink: ''
         },
         {
-            logo: shareLogo,
-            title: './Mini Blog',
-            content: <div className='project-resume'>
-                <p>O projeto do blog em desenvolvimento é uma iniciativa onde integrei tecnologias
-                    modernas para oferecer uma boa experiência aos usuários. Utilizando a biblioteca
-                    React.js para o frontend e o Firebase, o serviço de banco de dados do Google, para o backend,
-                    consegui criar uma plataforma dinâmica e interativa.</p>
-                <p>No âmbito do frontend, adotei o React.js devido à sua eficiência e capacidade de criar interfaces
-                    de usuário reativas e escaláveis. Isso permitiu uma experiência de navegação fluida e responsiva
-                    para os usuários do blog. Além disso, ao utilizar o Firebase como backend, pude garantir uma
-                    infraestrutura robusta e confiável para armazenar dados e gerenciar a autenticação dos usuários.</p>
-
-                <p>Um dos principais recursos do blog é a capacidade dos usuários de criar uma conta e acessar
-                    conteúdos exclusivos disponíveis apenas para membros logados. A autenticação é gerenciada
-                    pelo Firebase Authentication, garantindo a segurança dos dados dos usuários.</p>
-
-                <p>Após o login, os usuários têm a liberdade de compartilhar suas próprias postagens,
-                    incluindo texto e URLs de imagens relevantes. Essas postagens são armazenadas de forma
-                    centralizada no Firebase Firestore Database, permitindo fácil acesso e gerenciamento do conteúdo.Além disso,
-                    implementei a funcionalidade de interação social, onde os usuários podem
-                    visualizar as postagens de outros membros e expressar sua apreciação por meio de curtidas.</p>
-
-                <p>Vale lembrar que o projeto ainda esté em desenvolvimento, tanto em suas funcionalidades,
-                    quanto em seu layout e identidade visual. Portanto, em determinados momentos podem ocorrer eventuais erros
-                    não esperados.</p>
-            </div>,
-            htmlUrl: 'https://mini-blog-khaki.vercel.app',
-            repository: true,
-            repositoryLink: 'https://github.com/caamag/share'
-        },
-        {
             logo: taskFlowLogo,
             title: './Dashboard dinâmico',
             content: <div className='project-resume'>
-                <p>Projeto em desenvolvimento...</p>
+                <p>Um projeto pessoal focado em atender demandas de controle de gastos e gestão de clientes.
+                    Atualmente, a aplicação conta com um sistema de autenticação de usuário robusto, permitindo a
+                    criação de contas e a personalização das informações do perfil, como nome e foto. Desenvolvido
+                    com React no front-end e Firebase para autenticação, o TaskFlow está em fase de desenvolvimento,
+                    com muitas funcionalidades planejadas para o futuro. Mesmo ainda não estando completo, já é possível
+                    criar uma conta e explorar as configurações básicas do perfil.</p>
             </div>,
-            htmlUrl: '#',
+            htmlUrl: 'https://taskflow-nu-bice.vercel.app/',
             repository: true,
+            repositoryLink: 'https://github.com/caamag/taskflow'
+        },
+        {
+            logo: lacosteLogo,
+            title: './FAQ INTELIGENTE',
+            content: <div className='project-resume'>
+                <p>
+                    Durante meu período de estágio, desenvolvi uma central de ajuda para a Lacoste utilizando HTML,
+                    CSS e JavaScript Vanilla. Esta página foi projetada para auxiliar o suporte ao cliente, oferecendo
+                    informações de autoatendimento e permitindo que os clientes abram chamados diretamente pela plataforma.
+                    A solução facilita a resolução de dúvidas e problemas, proporcionando uma experiência mais eficiente e
+                    satisfatória para os clientes.
+                </p></div>,
+            htmlUrl: 'https://lacostebrazil.zendesk.com/hc/pt-br',
+            repository: false,
             repositoryLink: ''
+        },
+        {
+            logo: coinIcon,
+            title: './Project Manager',
+            content: <div className='project-resume'>
+                <p>
+                    Meu primeiro projeto pessoal foi um sistema CRUD de tarefas, desenvolvido
+                    utilizando apenas JavaScript e armazenando as informações em local storage.
+                    Este projeto inclui funcionalidades para gerenciar projetos e clientes, além de
+                    gerar relatórios simples em formato CSV e PDFs, automaticamente gerados com base
+                    nas informações armazenadas ao longo do tempo. Foi uma excelente oportunidade para
+                    aprimorar minhas habilidades em JavaScript e no desenvolvimento de soluções de armazenamento local.
+                </p>
+            </div>,
+            htmlUrl: 'https://coin-weld.vercel.app/',
+            repository: true,
+            repositoryLink: 'https://github.com/caamag/Gerenciador-de-projetos'
+        },
+        {
+            logo: zendeskIcon,
+            title: './App Zendesk',
+            content: <div className='project-resume'>
+                <p>Desenvolvi um aplicativo Zendesk que captura dados da API e, em poucos cliques,
+                    gera um arquivo CSV com essas informações organizadas. Por exemplo, é possível extrair
+                    uma base de usuários do Zendesk e obter uma planilha com informações relevantes de todos
+                    os usuários, como nome e função. Embora o projeto seja restrito a um cliente e não possa
+                    ser demonstrado em execução, o repositório com o código estará disponível para revisão.</p>
+            </div>,
+            htmlUrl: 'https://github.com/caamag/Zendesk-to-csv',
+            repository: true,
+            repositoryLink: 'https://github.com/caamag/Zendesk-to-csv'
         }
     ]
 
-    const contentClass = projects[index].title === './Dashboard dinâmico' ? 'content current-project-content-dark'
+    const contentClass = projects[index].title === './Dashboard dinâmico'
+        ? 'content current-project-content-dark'
         : 'content current-project-content'
 
     return <div className={contentClass}>
