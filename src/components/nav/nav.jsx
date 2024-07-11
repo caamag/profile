@@ -7,8 +7,6 @@ import folderIcon from './assets/folder.png';
 import chatIcon from './assets/chat.png';
 import CVIcon from './assets/cv-icon.png';
 
-import cvFile from '../../PDF/Curriculo-Caio-Lopes.pdf';
-
 //hooks
 import { NavLink } from 'react-router-dom';
 
@@ -37,7 +35,7 @@ function Nav() {
             </div>
         </NavLink>
 
-        <a href={cvFile} target='blank'>
+        <a href={'#'} target='blank'>
             <div className='nav-card'>
                 <img src={CVIcon} alt="" /><br />
                 <p>CURRÍCULO</p>

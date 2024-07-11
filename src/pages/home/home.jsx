@@ -6,6 +6,7 @@ import jsIcon from './assets/js-icon.png';
 import reactIcon from './assets/react-icon.png';
 import apiIcon from './assets/api-icon.png';
 import gitIcon from './assets/git-icon.png';
+import typescriptIcon from './assets/typescript-icon.jpeg'
 
 function Home() {
 
@@ -49,11 +50,12 @@ function Home() {
             </div>
 
             <div className="card">
-                <img src={apiIcon} alt=" rest API icon" />
-                <h3>Rest Api</h3>
+                <img src={typescriptIcon} alt=" rest API icon" />
+                <h3>Typescript</h3>
                 <p>
-                    Sou capaz de consumir APIs REST de forma eficiente,
-                    utilizando métodos HTTP (GET, POST, PUT e DELETE) para manipular recursos de maneira consistente e segura.
+                    Ele ajuda a detectar erros no código durante o desenvolvimento, melhorando a
+                    produtividade e a qualidade do software. Ideal para projetos de médio a grande porte,
+                    proporcionando uma base mais robusta e sustentável.
                 </p>
             </div>
 
