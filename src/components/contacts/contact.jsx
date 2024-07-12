@@ -6,6 +6,7 @@ import githubIcon from './assets/github.png';
 import linkedinIcon from './assets/linkedin.png';
 import smathphoneIcon from './assets/smartphone.png';
 import emailIcon from './assets/o-email.png';
+import curriculo from '../../PDF/curriculo.pdf'
 
 import { NavLink } from 'react-router-dom';
 
@@ -24,7 +25,7 @@ function Contact() {
                 <img src={linkedinIcon} alt="" />
             </a>
 
-            <a href={'#'} className='cv-btn' target='_blank'>CV</a>
+            <a href={curriculo} className='cv-btn' target='_blank'>CV</a>
         </div>
 
         <div className='nav-mobile'>
