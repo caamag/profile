@@ -32,7 +32,7 @@ function Projects() {
                 <div className="card">
                     <img src={lacostoLogo} alt="" /><br /><br />
                     <p>FAQ INTELIGENTE</p>
-                    <a href="https://lacostebrazil.zendesk.com/hc/pt-br" className='project-link'>lacostebrazil.zendesk.com/hc/pt-br</a>
+                    <a href="https://lacostebrazil.zendesk.com/hc/pt-br" className='project-link'>lacostebrazil.zendesk.com</a>
                 </div>
             </NavLink>
 
