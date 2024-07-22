@@ -86,7 +86,7 @@ function FormContact() {
                 onChange={(e) => { setContent(e.target.value) }}
             /><br />
 
-            <button type='submit'>Enviar mensagem</button><br /><br />
+            <button type='submit'>Enviar mensagem</button><br /><br /><br />
 
         </form>
 

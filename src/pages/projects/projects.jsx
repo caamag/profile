@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom';
 import pandoraLogo from './assets/Pandora-Logo.png';
 import taskFlowLogo from './assets/taskFlow-logo.png';
 import lacostoLogo from './assets/Lacoste-logo-.png.png';
-import iconLogo from './assets/coin-icon.jpeg';
 import zendeskIcon from './assets/zendesk-logo.webp'
 
 function Projects() {
@@ -49,14 +48,6 @@ function Projects() {
                     <img src={taskFlowLogo} alt="" /><br /><br />
                     <p>DASH DINÂMICO</p>
                     <a href="https://taskflow-nu-bice.vercel.app/" className='project-link'>taskflow-nu-bice.vercel.app/</a>
-                </div>
-            </NavLink>
-
-            <NavLink to={'/projects/4'}>
-                <div className="card">
-                    <img src={iconLogo} alt="" className='icon-logo' /><br /><br />
-                    <p>PROJECT MANAGER</p>
-                    <a href="https://coin-weld.vercel.app/" className='project-link'>coin-weld.vercel.app/</a>
                 </div>
             </NavLink>
         </div><br /><br />
